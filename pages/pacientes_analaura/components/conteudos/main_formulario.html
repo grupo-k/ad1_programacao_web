@@ -1,0 +1,157 @@
+<table bgcolor="#E2E6F2" width="100%" height="100%" cellpadding="10">
+    <tr height="5%">
+        <td valign="top">
+            <h1>
+                Cadastro de Paciente
+            </h1>
+        </td>
+    </tr>
+    <tr height="*">
+        <td align="center" valign="top">
+            <form method="post">
+                <fieldset>
+                    <legend>
+                        Formulário de Paciente
+                    </legend>
+                    
+                    <table width="100%" height="100%">
+                        <tr>
+                            <td align="left">
+                                <h3>
+                                    Dados Gerais
+                                </h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="nome-completo">
+                                    Nome Completo *
+                                </label>
+                                <br>
+                                <input type="text" id="nome-completo" name="nome-completo" required>
+                            </td>
+                            <td>
+                                <label for="data-nascimento">
+                                    Data de Nascimento
+                                </label>
+                                <br>
+                                <input type="date" id="data-nascimento" name="data-nascimento">
+                            </td>
+                            <td>
+                                <font color="black">Sexo</font>
+                                <br>
+                                <input type="radio" id="feminino" name="sexo">
+                                <label for="feminino">Feminino</label>
+                                <input type="radio" id="masculino" name="sexo">
+                                <label for="masculino">Masculino</label>
+                            </td>
+                            <td>
+                                <label for="cpf">CPF</label>
+                                <br>
+                                <input type="number" id="cpf" name="cpf">
+                            </td>
+                            <td>
+                                <label for="rg">RG</label>
+                                <br>
+                                <input type="number" id="rg" name="rg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <br>
+                                <h3>
+                                    Endereço
+                                </h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="cidade">
+                                    Cidade
+                                </label>
+                                <br>
+                                <input type="text" id="cidade" name="cidade">
+                            </td>
+                            <td>
+                                <label for="rua">
+                                    Rua
+                                </label>
+                                <br>
+                                <input type="text" id="rua" name="rua">
+                            </td>
+                            <td>
+                                <label for="uf">
+                                    Unidade Federativa
+                                </label>
+                                <br>
+                                <input type="text" id="uf" name="uf">
+                            </td>
+                            <td>
+                                <label for="cep">
+                                    CEP
+                                </label>
+                                <br>
+                                <input type="number" id="cep" name="cep">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <br>
+                                <h3>
+                                    Contato
+                                </h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="celular">
+                                    Celular
+                                </label>
+                                <br>
+                                <input type="number" id="celular" name="celular">
+                            </td>
+                            <td>
+                                <label for="email">
+                                    E-mail
+                                </label>
+                                <br>
+                                <input type="text" id="email" name="email">
+                            </td>
+=                        </tr>
+                        <tr>
+                            <td align="left">
+                                <br>
+                                <h3>
+                                    Filiação
+                                </h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="nome-pai">
+                                    Nome do pai
+                                </label>
+                                <br>
+                                <input type="nome-pai" id="nome-pai" name="nome-pai">
+                            </td>
+                            <td>
+                                <label for="nome-mae">
+                                    Nome do mãe
+                                </label>
+                                <br>
+                                <input type="nome-mae" id="nome-mae" name="nome-mae">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                <input type="submit" value="Cadastrar paciente">
+                            </td>
+                        </tr>
+                    </table>
+
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+</table>
