@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Usuários</title>
+    <style>
+        /* Estilos comuns */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para tabelas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #576CAB;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilos específicos para o menu lateral e superior */
+        #menu-lateral {
+            width: 190px;
+            background-color: white;
+            height: calc(100% - 60px);
+        }
+
+        #consultorio {
+            background-color: #1B264F;
+            height: 60px;
+            text-align: center;
+        }
+
+        #menu-links {
+            background-color: #576CAB;
+            height: 65px;
+            text-align: center;
+        }
+
+        #dados-links {
+            background-color: white;
+            height: 65px;
+            text-align: center;
+        }
+
+        #card {
+            background-color: gray;
+            height: 251px;
+        }
+
+        #card-paciente {
+            background-color: white;
+            height: 250px;
+        }
+
+        #menu-superior {
+            background-color: #576CAB;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Conteúdo do lado esquerdo -->
+    <table>
+        <tr>
+            <!-- Coluna do menu lateral esquerdo -->
+            <td width="190">
+                <!-- Nome do consultório -->
+                <table id="consultorio">
+                    <tr>
+                        <td><font color="white">Consultório Priscila Oliver</font></td>
+                    </tr>
+                </table>
+
+                <!-- Menu lateral esquerdo -->
+                <table id="menu-lateral">
+                    <tr>
+                        <td>
+                            <!-- Links do menu -->
+                            <table height="500" width="100%" cellpadding="0">
+                                <tr>
+                                    <td id="menu-links"><a href=""><font size="4" color="white">Relatório de Usuários</font></a></td>
+                                </tr>
+                                <tr>
+                                    <td id="dados-links"><a href=""><font size="4" color="black">Dados pessoais</font></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a><font size="4" color="black"></font></a></td>
+                                </tr>
+                                <tr height="300">
+                                    <td valign="top" align="center">
+                                        <!-- Card do paciente -->
+                                        <table id="card">
+                                            <tr>
+                                                <td>
+                                                    <!-- Conteúdo do card -->
+                                                    <table id="card-paciente">
+                                                        <tr>
+                                                            <td colspan="3" height="30%" valign="middle" align="center">
+                                                            </td>
+                                                            <td valign="middle" align="center" width="33%">
+                                                                <a href="" width="60">
+                                                            </td>
+                                                            <td valign="middle" align="center">
+                                                                <a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- Coluna do menu superior e conteúdo -->
+            <td valign="top">
+                <!-- Menu superior -->
+                <table id="menu-superior">
+                    <tr>
+                        <td bgcolor="#576CAB" width="14%" align="center" valign="middle"><a href="../pacientes_analaura/index_pacientes.html"><font color="white">Pacientes</font></a></td>
+                        <td bgcolor="#576CAB" width="14%" align="center" valign="middle"><a href="../anamneses_pablo/Index_anamnese.html"><font color="white">Anamneses</font></a></td>
+                        <td bgcolor="#576CAB" width="14%" align="center" valign="middle"><a href="../servicos_carlos/Index_Servicos.html"><font color="white">Serviços</font></a></td>
+                        <td bgcolor="#1B264F" width="14%" align="center" valign="middle"><a href="Index_Usuarios.html"><font color="white">Usuários</font></a></td>
+                        <td bgcolor="#576CAB" width="44%"></td>
+                    </tr>
+                </table>
+
+                <!-- Tabela de relatório de usuários -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CPF</th>
+                            <th>Email</th>
+                            <th>Idade</th>
+                            <th>Sexo</th>
+                            <th>Endereço</th>
+                            <th>Nível de Acesso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123.456.789-01</td>
+                            <td>usuario1@example.com</td>
+                            <td>30</td>
+                            <td>Masculino</td>
+                            <td>Rua A, 123</td>
+                            <td>Admin</td>
+                        </tr>
+                        <tr>
+                            <td>987.654.321-09</td>
+                            <td>usuario2@example.com</td>
+                            <td>25</td>
+                            <td>Feminino</td>
+                            <td>Rua B, 456</td>
+                            <td>User</td>
+                        </tr>
+                        <tr>
+                            <td>456.789.012-34</td>
+                            <td>usuario3@example.com</td>
+                            <td>40</td>
+                            <td>Masculino</td>
+                            <td>Rua C, 789</td>
+                            <td>Admin</td>
+                        </tr>
+                        <tr>
+                            <td>567.890.123-45</td>
+                            <td>usuario4@example.com</td>
+                            <td>35</td>
+                            <td>Feminino</td>
+                            <td>Rua D, 012</td>
+                            <td>User</td>
+                        </tr>
+                        <tr>
+                            <td>234.567.890-12</td>
+                            <td>usuario5@example.com</td>
+                            <td>28</td>
+                            <td>Outro</td>
+                            <td>R
